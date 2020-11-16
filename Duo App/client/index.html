@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Average Sans' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans+Caption" />
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="/images/icons/icon-96x96.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#0dcd83";>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BarcodeScanner</title>
+</head>
+<body>
+    <div class="header">
+        <div class="content"><h2>Should I Eat It? <span role="img" aria-label="shopping cart" style="margin-left:-5px;">🛒</span></h2></div>
+        <div class="btn">
+            <button id="installbtn" class="button"><span>Install</span></button>
+        </div>
+    </div>    
+    <div class="container">
+        <div class="content" style="margin-left:0px;font-size:16px;" id="content">
+            <h4 style="font-size:16px;padding:2px;">Scan a product's barcode and get its nutritional values <span role="img" aria-label="apple" style="margin-left:-5px;">🍎</span></h4>
+        <div class="topnav">
+            <div class="search-container">
+                <input id="searchquery" type="text" placeholder="Search by barcode">
+                <button onclick=loadProductInfo(); id="searchbtn"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div> 
+        <div class="camera" style="margin-left:0px;">
+            <!-- <p class="camera_message">Enable your camera with the button below</h3> -->
+                <!-- <div class="camera_messageIcon"> -->
+                    <!-- <i class='fas fa-angle-down'></i> -->
+                </div>
+            </p>
+            <!-- <p id="barcode">Barcode: </p> -->
+            <div id="scanner-container">
+                <video src=""></video>
+                <canvas class="drawingBuffer"></canvas>
+            </div>
+        </div>
+            <!-- <button type="button" id="btn" style="margin-top:-200px;" class="camera_button camera_enable"><i class="fa fa-camera"></i></button> --> 
+        <nav class="nav">
+          <a href="/info.html" class="nav__link">
+              <i class="fas fa-info-circle"></i>
+              <span class="nav__text">Info</span>
+          </a>
+          <a href="#" class="nav__link nav__link--active">
+              <i class="fas fa-barcode"></i>
+              <span class="nav__text">Scanner</span>
+          </a>
+          <a href="mylist.html" class="nav__link">
+              <i class="fas fa-cog"></i>
+              <span class="nav__text">Badges</span>
+          </a>
+          <a href="history.html" class="nav__link">
+              <i class="fas fa-history"></i>
+              <span class="nav__text">History</span>
+          </a>
+        </nav>
+<script src="script.js" type="text/javascript"></script>
+<script src="js/quagga.min.js" type="text/javascript"></script>
+<script src="js/cameraScaner.js" type="text/javascript"></script>
+<script src="js/search.js" type="text/javascript"></script>
+</body>
+</html>

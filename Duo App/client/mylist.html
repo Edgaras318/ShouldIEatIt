@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Average Sans' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans+Caption" />
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="/images/icons/icon-96x96.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#0dcd83";>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BarcodeScanner</title>
+</head>
+<body>
+    <div class="header">
+        <div class="content"><h2>Badges List<i class="fa fa-cog" style="margin-left:5px;"></i></h2></div>
+    </div> 
+    <div class="container">
+        <div class="cant_eat_container">
+            <h3 id="description_title">Badges Selection Allergic To &#9940;</h3>
+            <div class="description">
+                <p>All Cereals/Coeliacs 
+                    <label class="switch">
+                        <input onclick="check()" id="cereal"  type="checkbox" >
+                        <span class="slider round"></span>
+                    </label>
+                </p>
+                <hr style="width:100%;">
+                <p>Nuts (peanuts, almonds)
+                    <label class="switch">
+                        <input onclick="check2()" id="nuts" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </p>
+                <hr style="width:100%;">
+                <p>Garlic
+                    <label class="switch">
+                        <input onclick="check3()" id="garlic" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </p>
+                <!-- <hr style="width:100%;">
+                <p>Fish
+                    <label class="switch">
+                        <input type="checkbox" >
+                        <span class="slider round"></span>
+                    </label>
+                </p>
+                <hr style="width:100%;">
+                <p>Egg
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </p> -->
+            </div>
+        </div>
+        <div class="allergy_container">
+            <h3 id="description_title">Badges Selection Healthy &#9989;</h3>
+            <div class="description">
+                <p>Vegan
+                    <label class="switch">
+                        <input onclick="check4()" id="vegan" id="switchValue" type="checkbox">
+                        <span id="switch" class="slider round"></span>
+                    </label>
+                </p>
+                <hr style="width:100%;">
+                <p>Low Sugar
+                    <label class="switch">
+                        <input onclick="check5()" id="lowsugar" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </p>
+            </div>
+        </div>
+    <div class="margin">
+        <div class="menu">
+            <div class="menu-list">
+          <button class="button1" style="vertical-align:middle" > <a href="/info.html" ><span><i class="fas fa-info-circle"></i> More Info</span></a></button> 
+          </div>
+          </div>
+        </div>
+        <nav class="nav">
+            <a href="/info.html" class="nav__link">
+                <i class="fas fa-info-circle"></i>
+                <span class="nav__text">Info</span>
+            </a>
+            <a href="index.html" class="nav__link">
+                <i class="fas fa-barcode"></i>
+                <span class="nav__text">Scanner</span>
+            </a>
+            <a href="#" class="nav__link nav__link--active">
+                <i class="fas fa-cog"></i>
+                <span class="nav__text">Badges</span>
+            </a>
+            <a href="history.html" class="nav__link">
+                <i class="fas fa-history"></i>
+                <span class="nav__text">History</span>
+            </a>
+        </nav>
+    </div>
+<script src="js/list.js"></script>
+</body>
+</html>

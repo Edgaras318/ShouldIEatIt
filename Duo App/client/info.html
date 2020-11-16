@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Average Sans' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans+Caption" />
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="/images/icons/icon-96x96.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#0dcd83";>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BarcodeScanner</title>
+</head>
+<body>
+    <div class="header">
+        <div class="content"><h2>Should I Eat It? <span role="img" aria-label="shopping cart" style="margin-left:-5px;">🛒</span></h2></div>
+    </div>     
+    <div class="container">
+        <div class="badges_info-container">
+            <div id="badges_explanation">
+                <p>In order to see badges</p><br>
+                <div class="menu">
+                    <div class="menu-list">
+                        <button class="button1 menu-item" > <a href="/mylist.html" ><span> Are you health concious? </span></a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cant_eat_section">
+            <h2 id="cant_eat_title">Badges for Allergens</h2>
+            <br>
+            <div id="cant_eat_explanation">
+                <p>You select options from this section if you are allergic to them.
+                    Each allergen has its own badge:
+                </p>
+            </div>
+            <div class="badges_container" style="margin-left:-10px;"><br>
+                <div id="badges_description">
+                    <img class="badges_image" src="images/allergy-cereals.png">
+                    <p><b>Gluten</b></p>
+                </div>
+                <div id="badges_description">
+                    <img class="badges_image" src="images/allergy-garlic.png">
+                    <p><b>Garlic</b></p>
+                </div>
+                <div id="badges_description">
+                    <img class="badges_image" src="images/allergy-peanuts.png">
+                    <p><b>Nuts</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="want_to_eat_section"> 
+            <h2 id="want_eat_title">Badges for Healthy Food</h2>
+            <br>
+            <div id="want_to_eat_explanation" style="margin-top:-30px;">
+                <p>You select options from this section if you want to eat healthy.<br>
+                   Each badge has its own meaning:
+                </p>
+            </div>
+            <div class="badges_container" style="margin-left:-10px;"><br>
+                <div id="badges_description_green">
+                    <img class="badges_image" src="images/healthy.png">
+                    <p><b>Vegan</b></p>
+                </div>
+                <div id="badges_description_green">
+                    <img class="badges_image" src="images/healthy.png">
+                    <p><b>Low Sugar</b></p>
+                </div>
+            </div>
+            <div id="want_to_eat_explanation"><br>
+                <p>The vegan badge means the product is free from: fish, pork, meat, etc.<br>
+                    The low sugar badge means the product's sugar content is 5g or below per 100g.
+                </p>
+            </div>
+        </div>
+        <nav class="nav">
+          <a href="#" class="nav__link nav__link--active">
+              <i class="fas fa-info-circle"></i>
+              <span class="nav__text">Info</span>
+          </a>
+          <a href="/index.html" class="nav__link">
+              <i class="fas fa-barcode"></i>
+              <span class="nav__text">Scanner</span>
+          </a>
+          <a href="/mylist.html" class="nav__link">
+              <i class="fas fa-cog"></i>
+              <span class="nav__text">Badges</span>
+          </a>
+          <a href="/history.html" class="nav__link">
+              <i class="fas fa-history"></i>
+              <span class="nav__text">History</span>
+          </a>
+        </nav>
+    </div>
+</body>
+</html>

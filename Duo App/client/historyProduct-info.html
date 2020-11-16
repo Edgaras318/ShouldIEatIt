@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Average Sans' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans+Caption" />
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="/images/icons/icon-96x96.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#0dcd83";>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BarcodeScanner</title>
+</head>
+<body>
+  <div class="header">
+    <button onclick=window.history.back(); type="button" class="go_backbtn">
+      <i class="fas fa-angle-left"></i>
+    </button>
+    <div class="content"><h2 class="test" style="margin-left:-10px;">Product Information</h2></div>
+  </div>    
+  <div class="containerp" style="width:100%;">
+    <h1 id="barcode"></h1>
+    <div class="product_container">
+        <div class="product_titleContainer">
+          <h2 id="title"></h2>
+          <h4 id="brand"></h4>
+        </div>
+          <div class="image_container">
+            <img id="image" src="">
+        </div><br>
+        <hr style="width:100%;">
+        <div class="badges_container">
+          <!-- <h1 id="badges_title">2 <p class="smaller_text"> of 3 </p>badges</h1> -->
+          <h1 id="badges_title">Badges</h1>
+          <br>
+          <div id="badges_div">
+            <!-- <div id="badges_description" style="margin-left:10%;">
+                <img class="badges_image" src="images/allergy.png">
+                <p>Contains peanuts</p>
+            </div>
+            
+            <div id="badges_description" style="margin-left:10%;">
+              <img class="badges_image" src="images/healthy.png">
+              <p>A lot of proteins</p>
+            </div><br>
+             -->
+            </div>
+          </div>
+          <hr style="width:100%;margin-top:30px;">
+          <div class="description_container">
+            <h1 id="description_title">Product Description</h1>
+              <p id="product_description" class="product_description">Want baked beans for tea? These are as good as the brand - put a can or two in the trolley.<br />
+                Tasted by Martin Isark. Cometing Brand: Heinz"<br><br>
+                <b>Weight: 410g</b><br>
+                <b>Price: 0.34</b> 
+              </p>
+          </div>
+          <hr style="width:100%;margin-top:30px;">
+          <div class="ingredients_container">
+            <h1 id="ingredients_title">Ingredients</h1>
+              <p id="ingredients" class="ingredients">
+                Haricot Beans (49%), Tomatoes (34%), Water, Sugar, Modified Maize Starch, Salt, 
+                Onion Powder, Paprika, Sunflower Oil, Paprika Extract, Clove Extract, Bay Extract, 
+                Capsicum Extract, Cinanmon Extract, Garlic Oil, Natural Flavouring, Rapeseed Oil</p>
+                <h3 id="allergy_info">Contains</h3>
+                <p id="contains" class="contains">Garlic, Onions</p>
+          </div>
+          <hr style="width:100%;margin-top:30px;">
+          <div class="nutrition_container">
+            <h1 id="nutrition_title">Nutrition Info</h1>
+              <div class="nutrition">
+                <div class="productDisplay__list">
+                  <span>
+                    <div class="productDisplay__list--item">
+                      <span role="img" aria-label="plant">🌱</span>
+                      <span>Energy</span>
+                      <span id="energy" class="productDisplay__list--value">378 / 100g</span>
+                      <span><br>
+                    </div>
+                    <hr style="width:100%;">
+                    <div class="productDisplay__list--item">
+                      <span role="img" aria-label="wheat">🌾</span>
+                      <span>Carbs</span>
+                      <span id="carbs"class="productDisplay__list--value">14 / 100g</span>
+                      <span><br><br>
+                    </div>
+                    <span>Sugar</span>
+                    <span id="sugar" class="productDisplay__list--value">4.1 / 100g</span>
+                    <span><br>
+                    <hr style="width:100%;">
+                    <div class="productDisplay__list--item">
+                      <span role="img" aria-label="cow">🐄</span>
+                      <span> Fat</span>
+                      <span id="fat" class="productDisplay__list--value">0.5 / 100g</span>
+                    <span><br><br>
+                  </div>
+                    <span> Saturated fat:</span>
+                    <span id="satfat" class="productDisplay__list--value">0.1 / 100g</span>
+                  <span><br>
+                  <hr style="width:100%;">
+                  <div class="productDisplay__list--item">
+                    <span role="img" aria-label="warning">⚠️</span>
+                    <span>Other</span>
+                    <span><br><br>
+                  </div>
+                    <span>Sodium</span>
+                    <span id="sodium" class="productDisplay__list--value">0.28 / 100g</span>
+                    <span><br><br> 
+                      <span>Salt</span>
+                      <span id="salt" class="productDisplay__list--value">0.7 / 100g</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/fetchHistory.js" type="text/javascript"></script>
+</body>
+</html>
